@@ -70,6 +70,7 @@ int isSpecial(char prn[15])
 int isAuthentic(char prn[15])
 {
 	int i=0,j=0,no=0,yr=0;
+	byte i=0,j=1,no=0,yr=0;
 	char br[6];
 	char d;
 	while(i<4)
@@ -80,6 +81,7 @@ int isAuthentic(char prn[15])
 	}
 	if(yr!=year)
 	{
+		{
 		printf("\n  Invalid PRN(Incorrect Year)");
 		return 0;
 	}
@@ -89,6 +91,7 @@ int isAuthentic(char prn[15])
 		br[j]=prn[i];
 		j++;
 		i++;
+		yr++;
 	}
 	br[j]='\0';
 	strcpy(br1,br);
