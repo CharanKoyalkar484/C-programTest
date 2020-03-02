@@ -19,11 +19,14 @@ int main()
 				admin();
 			else
 			{
+				if(n==50)
+				admin()
+		        else
 				if(n==51)
 				{
-					free(ptr);
-					free(a);
-					return 0;
+					free(ptr)
+					free(a)
+					return 0
 				}
 				else
 				{
