@@ -1,0 +1,9 @@
+CMake_minimum_required(VERISON "3.17.0"
+
+set(CMAKE_BUILD_TYPE Debug)
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
+project(C-programTest)
+add_executable{
+         C-programTest
+         main.cpp
+         }
